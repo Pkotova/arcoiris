@@ -1,0 +1,41 @@
+ARCOIRIS
+--------
+Технологии: 
+Front end:
+ejs,css,js, bootstrap
+
+Back end:
+ExpressJS/Node.js
+
+Data base:
+Mongo DB 
+
+--BETA VERSION
+
+DB  - USER, TASK, SECTION, BORD, COMMENT
+
+USER(KRISI) - id, First Name, Last Name, password (encrypted), email, createdTime, updatedTime
+
+TASK(VESSY) - id, TITLE, NUMBER, DESCRIPTION, ESTIMATED TIME, OWNER (USER ID),ASSIGNE (USER ID), COMMENTS (COMMENT ids), SECTION_ID, BOARD_ID, DATE, updatedTime
+
+BORD(ADI) - ID, TITLE, OWNER, PARTICIPANTS[USER IDS], createdTime, updatedTime
+
+SECTION(DANNY) - ID, TITLE,BOARD_ID,DATE, createdTime,updatedTime
+
+COMMENT(PETYA) - ID, CONTENT, AUTHOR, TASK_ID, createdTime,updatedTime
+
+---- 
+FRONT-END - 
+INDEX.ejs, - BOARDS, HELP, CREATE - [ADI, KRISI]
+BOARD.ejs, - [VESSY,KRISI] 
+PROFILE.ejs - [PETYA,VESSY] 
+LOGIN/SIGNUP - [DANNY,PETYA]
+----
+BACK-END - 
+- MENU - FROM END TO END [ADI]
+- CRUD - CRUD COMMENT[PETYA],CRUD BOARD[ADI],CRUD USER[KRISI], CRUD SECTION[DANNY], CRUD TASK[VESSY]
+AUTH [PETYA, DANNY]
+
+
+
+
