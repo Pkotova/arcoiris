@@ -1,0 +1,26 @@
+
+.card {
+  min-width: 272px;
+  max-width: 272px;
+  height: auto;
+  background-color: #ebecf0;
+}
+
+.sortable-item {
+  transition: background-color 0.2s ease-in !important;
+}
+.sortable-item:hover {
+  background-color: rgba(0, 0, 0, 0.01) !important;
+}
+.search {
+  margin-bottom: auto!important;
+}
+@media (min-width: 768px) {
+.ml-md-2, .mx-md-2 {
+    margin-left: .0rem!important;
+}
+}
+
+.boards {
+  margin-top: 100px;
+}
