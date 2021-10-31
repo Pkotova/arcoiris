@@ -1,11 +1,26 @@
 {
-  "name": "node_passport_login",
-  "version": "2.0.0",
-  "description": "Node.js authentication with Passport",
-  "main": "app.js",
+  "name": "arcoiris",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pkotova/arcoiris.git"
+  },
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
+  },
+  "bugs": {
+    "url": "https://github.com/Pkotova/arcoiris/issues"
+  },
+  "homepage": "https://github.com/Pkotova/arcoiris#readme",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "name": "",
+    "version": "2.0.0",
+    "description": "",
+    "main": "app.js"
   },
   "keywords": [],
   "author": "",
@@ -21,8 +36,5 @@
     "mongoose": "^5.13.12",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.18.9"
   }
 }

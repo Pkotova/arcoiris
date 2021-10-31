@@ -59,8 +59,6 @@ app.use('/users', require('./routes/users.js'));
 app.use('/comment', require('./routes/comment.js'));
 app.use('/board', require('./routes/board.js'));
 app.use('/task', require('./routes/task.js'));
-app.use('/section', require('./routes/section.js'));
-
 
 const PORT = process.env.PORT || 5000;
 
