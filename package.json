@@ -2,27 +2,39 @@
   "name": "arcoiris",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Pkotova/arcoiris.git"
   },
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
   "bugs": {
     "url": "https://github.com/Pkotova/arcoiris/issues"
   },
   "homepage": "https://github.com/Pkotova/arcoiris#readme",
   "description": "",
-  "dependencies": {
-    "ejs": "^3.1.6",
-    "express": "^4.17.1",
-    "express-ejs-layouts": "^2.5.1"
-  },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "name": "",
+    "version": "2.0.0",
+    "description": "",
+    "main": "app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.15.6",
+    "mongodb": "^4.1.3",
+    "mongoose": "^5.13.12",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
   }
 }
