@@ -5,7 +5,7 @@ const session = require('express-session');
 const Contact = require("../models/Board");
 
 router.post('/create-board', (req, res) => {
-
+    c
 })
 router.post('/read-board', (req, res) => {
 })

@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const router = express.Router();
 const session = require('express-session');
-const Contact = require("../models/Comment");
+const Comment = require("../models/Comment");
 
 router.post('/create-comment', (req, res) => {
     const content = req.body['content'];
@@ -36,7 +36,7 @@ router.post('/update-comment/:id', function (req, res) {
     const updatedComment = {
         content: req.body['content']
     }
-    Contact.findByIdAndUpdate(filter,updatedComment,
+    Comment.findByIdAndUpdate(filter,updatedComment,
         function (err){
             if (err){
                 res.send(err);
