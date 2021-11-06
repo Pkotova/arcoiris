@@ -1,144 +1,229 @@
 <!--Main Navigation-->
-<header class="mb-4 fixed-top">
-    <!-- Jumbotron -->
-    <div class="p-3 text-center bg-white border-bottom">
-        <div class="container-fluid">
-            <div class="row">
-                <!-- Right elements -->
-                <div class="col-md-5 d-flex justify-content-center justify-content-md-start align-items-center d-none d-lg-flex">
-                
-                    <a class="text-reset mr-3" href="#">
-                        <i class="fas fa-home"></i>
-                    </a>
-                    <a class="text-reset mr-3" href="#">
-                        <i class="fas fa-columns mr-1"></i>
-                        <span class="d-none d-xl-inline-block">Boards</span>
-                    </a>
+<%- contentFor('header') %>
+<!-- Jumbotron -->
+<div class="p-3 text-center bg-white border-bottom">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Right elements -->
+            <div
+                class="col-md-5 d-flex justify-content-center justify-content-md-start align-items-center d-none d-lg-flex">
 
-                    <form class="search d-flex input-group w-auto my-auto mb-3 mb-md-0">
-                        <input autocomplete="off" type="search" class="form-control rounded" placeholder="Search" />
-                        <span class="input-group-text border-0 d-none d-lg-flex"><i class="fas fa-search"></i></span>
-                    </form>
-                </div>
+                <a class="text-reset mr-3" href="#">
+                    <i class="fas fa-home"></i>
+                </a>
+                <a class="text-reset mr-3" href="#">
+                    <i class="fas fa-columns mr-1"></i>
+                    <span class="d-none d-xl-inline-block">Boards</span>
+                </a>
 
-                <!-- Center elements -->
-                <div class="col-md-2 d-none d-lg-block">
-                    <a href="#!" class="ml-md-2">
-                        <h3>ACROIRIS</h3>
-                    </a>
-                </div>
-                <!-- Center elements -->
+                <form class="search d-flex input-group w-auto my-auto mb-3 mb-md-0">
+                    <input autocomplete="off" type="search" class="form-control rounded" placeholder="Search" />
+                    <span class="input-group-text border-0 d-none d-lg-flex"><i class="fas fa-search"></i></span>
+                </form>
+            </div>
 
-                <!-- Right elements -->
-                <div class="col-lg-5 d-flex justify-content-center justify-content-md-end align-items-center">
-                    <a class="text-reset mr-3" href="#">
+            <!-- Center elements -->
+            <div class="col-md-2 d-none d-lg-block">
+                <a href="#!" class="ml-md-2">
+                    <h3>ACROIRIS</h3>
+                </a>
+            </div>
+            <!-- Center elements -->
+
+            <!-- Right elements -->
+            <div class="col-lg-5 d-flex justify-content-center justify-content-md-end align-items-center">
+                <!-- <a class="text-reset mr-3" href="#">
                         <i class="fas fa-plus"></i> Create
-                    </a>
-                    <a class="text-reset mr-3" href="#">
-                        <i class="fas fa-info-circle"></i> Help
-                    </a>
+                    </a> -->
+                <button type="button" class="btn btn-primary mr-3" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fas fa-plus"></i> Create
+                </button>
+                <a class="text-reset mr-3" href="#">
+                    <i class="fas fa-info-circle"></i> Help
+                </a>
 
-                    <!-- Notification -->
-                    <div class="dropdown">
-                        <a class="text-reset mr-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
-                            role="button" data-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-bell"></i>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Some news</a></li>
-                            <li><a class="dropdown-item" href="#">Another news</a></li>
-                            <li>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </li>
-                        </ul>
-                    </div>
+                <!-- Notification -->
+                <div class="dropdown">
+                    <a class="text-reset mr-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
+                        role="button" data-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Some news</a></li>
+                        <li><a class="dropdown-item" href="#">Another news</a></li>
+                        <li>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </li>
+                    </ul>
+                </div>
 
-                    <!-- User -->
-                    <div class="dropdown">
-                        <a class="
+                <!-- User -->
+                <div class="dropdown">
+                    <a class="
                 text-reset
                 dropdown-toggle
                 d-flex
                 align-items-center
                 hidden-arrow
               " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
-                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img (31).jpg" class="rounded-circle"
-                                height="22" alt="" loading="lazy" />
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">My profile</a></li>
-                            <li><a class="dropdown-item" href="#">Settings</a></li>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
-                        </ul>
-                    </div>
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img (31).jpg" class="rounded-circle"
+                            height="22" alt="" loading="lazy" />
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">My profile</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
                 </div>
-                <!-- Right elements -->
+            </div>
+            <!-- Right elements -->
+        </div>
+    </div>
+</div>
+<!-- Jumbotron -->
+
+<!-- Create -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create Board</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group row">
+                        <label for="inlineFormInput" class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inlineFormInput" class="col-sm-2 col-form-label">Description</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Jane Doe">
+                        </div>
+                    </div>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Choose background</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                        value="option1" checked>
+                                    <label class="form-check-label" for="gridRadios1">
+                                        <img src="https://assets.unenvironment.org/s3fs-public/styles/topics_content_promo/public/2021-05/alberta-2297204_1920.jpg?itok=aim5GFuY" height="100" alt="" loading="lazy" >
+
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                        value="option2">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Second radio
+                                    </label>
+                                </div>
+                                <div class="form-check disabled">
+                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
+                                        value="option3" disabled>
+                                    <label class="form-check-label" for="gridRadios3">
+                                        Third disabled radio
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="form-group row">
+                        <div class="col-sm-2">Checkbox</div>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <label class="form-check-label" for="gridCheck1">
+                                    Example checkbox
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>
-    <!-- Jumbotron -->
-</header>
+</div>
 <!--Main Navigation-->
 
 <!--Main layout-->
-<main id="intro">
-    <div>
-        <!--Section: Board-->
-        <section class="boards d-flex align-items-start h-100"  style="position: relative"
-            data-sortable="sortable">
-            <!-- Board -->
-            <div class="card shadow-1-strong m-3 p-2 pb-0">
-                <!-- Board name -->
-                <div class=" card-header d-flex justify-content-between pl-1  pr-0 pb-3 border-0 ">
-                    <p class="mb-0"><strong>Backlog</strong></p>
-                    <button type="button" class="btn btn-link text-reset m-0 py-0 px-2" data-ripple-color="dark">
-                        <i class="fas fa-ellipsis-h"></i>
-                    </button>
-                </div>
-                <!-- Board name -->
+<%- contentFor('main') %>
+<div>
+    <!--Section: Board-->
+    <section class="boards d-flex align-items-start h-100" style="position: relative" data-sortable="sortable">
+        <!-- Board -->
+        <div class="card shadow-1-strong m-3 p-2 pb-0">
+            <!-- Board name -->
+            <div class=" card-header d-flex justify-content-between flex-column border-0 ">
+                <img src="https://assets.unenvironment.org/s3fs-public/styles/topics_content_promo/public/2021-05/alberta-2297204_1920.jpg?itok=aim5GFuY"
+                    height="100" alt="" loading="lazy" />
+                <p class="mb-0"><strong>Project</strong></p>
+                <button type="button" class="btn btn-link " data-ripple-color="dark">
+                    View
+                </button>
             </div>
-            <!-- Board -->
+            <!-- Board name -->
+        </div>
+        <!-- Board -->
 
-            <!-- Board -->
-            <div class="card shadow-1-strong m-3 p-2 pb-0">
-                <!-- Board name -->
-                <div class=" card-header d-flex justify-content-between pl-1  pr-0 pb-3 border-0 ">
-                    <p class="mb-0"><strong>Backlog</strong></p>
-                    <button type="button" class="btn btn-link text-reset m-0 py-0 px-2" data-ripple-color="dark">
-                        <i class="fas fa-ellipsis-h"></i>
-                    </button>
-                </div>
-                <!-- Board name -->
+        <!-- Board -->
+        <div class="card shadow-1-strong m-3 p-2 pb-0">
+            <!-- Board name -->
+            <div class=" card-header d-flex justify-content-between flex-column border-0 ">
+                <img src="https://assets.unenvironment.org/s3fs-public/styles/topics_content_promo/public/2021-05/alberta-2297204_1920.jpg?itok=aim5GFuY"
+                    height="100" alt="" loading="lazy" />
+                <p class="mb-0"><strong>Project 3</strong></p>
+                <button type="button" class="btn btn-link" data-ripple-color="dark">
+                    View
+                </button>
             </div>
-            <!-- Board -->
-            <!-- Board -->
-            <div class="card shadow-1-strong m-3 p-2 pb-0">
-                <!-- Board name -->
-                <div class=" card-header d-flex justify-content-between pl-1  pr-0 pb-3 border-0 ">
-                    <p class="mb-0"><strong>Backlog</strong></p>
-                    <button type="button" class="btn btn-link text-reset m-0 py-0 px-2" data-ripple-color="dark">
-                        <i class="fas fa-ellipsis-h"></i>
-                    </button>
-                </div>
-                <!-- Board name -->
+            <!-- Board name -->
+        </div>
+        <!-- Board -->
+        <!-- Board -->
+        <div class="card shadow-1-strong m-3 p-2 pb-0">
+            <!-- Board name -->
+            <div class=" card-header d-flex justify-content-between flex-column border-0 ">
+                <img src="https://assets.unenvironment.org/s3fs-public/styles/topics_content_promo/public/2021-05/alberta-2297204_1920.jpg?itok=aim5GFuY"
+                    height="100" alt="" loading="lazy" />
+                <p class="mb-0"><strong>Project 1</strong></p>
+                <button type="button" class="btn btn-link " data-ripple-color="dark">
+                    View
+                </button>
             </div>
-            <!-- Board -->
-             <!-- Board -->
-             <div class="card shadow-1-strong m-3 p-2 pb-0">
-                <!-- Board name -->
-                <div class=" card-header d-flex justify-content-between pl-1  pr-0 pb-3 border-0 ">
-                    <p class="mb-0"><strong>Backlog</strong></p>
-                    <button type="button" class="btn btn-link text-reset m-0 py-0 px-2" data-ripple-color="dark">
-                        <i class="fas fa-ellipsis-h"></i>
-                    </button>
-                </div>
-                <!-- Board name -->
+            <!-- Board name -->
+        </div>
+        <!-- Board -->
+        <!-- Board -->
+        <div class="card shadow-1-strong m-3 p-2 pb-0">
+            <!-- Board name -->
+            <div class=" card-header d-flex justify-content-between flex-column border-0 ">
+                <img src="https://assets.unenvironment.org/s3fs-public/styles/topics_content_promo/public/2021-05/alberta-2297204_1920.jpg?itok=aim5GFuY"
+                    height="100" alt="" loading="lazy" />
+                <p class="mb-0"><strong>Project 2</strong></p>
+                <button type="button" class="btn btn-link " data-ripple-color="dark">
+                    View
+                </button>
             </div>
-            <!-- Board -->
-            
-            
-        </section>
-        <!--Section: Boards-->
-    </div>
-</main>
+            <!-- Board name -->
+        </div>
+        <!-- Board -->
+
+
+    </section>
+    <!--Section: Boards-->
+</div>
 <!--Main layout-->
