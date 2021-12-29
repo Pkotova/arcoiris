@@ -31,12 +31,12 @@ const TaskSchema = new mongoose.Schema({
         required: false
     },
     section:{
-        type:String,//section_id
+        type:String, //section_id
         required: true,
         default:"TO DO/NOT READY"
     },
     board:{
-        type:String,
+        type:String, // board_id
         required: false
     },
     createdDate: {
