@@ -1,3 +1,132 @@
-<h1 class="mt-4">Dashboard</h1>
-<p class="lead mb-3">Welcome <%= user.name %></p>
-<a href="/users/logout" class="btn btn-secondary">Logout</a>
+<%- contentFor('main') %>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white d-none d-lg-block">
+    <!-- Container wrapper -->
+    <div class="container-fluid justify-content-center justify-content-md-between">
+        <!-- Left elements -->
+        <div class="d-flex align-items-center">
+
+            <button class="btn btn-link mr-1" data-ripple-color="dark" type="button">
+               Board Name
+            </button>
+
+            <button class="btn btn-outline-primary mr-1" data-ripple-color="dark" type="button">
+                <i class="fas fa-users mr-2"></i>Team
+            </button>
+
+            <a href="">
+                <img src="https://mdbootstrap.com/img/new/avatars/1.jpg" class="border rounded-circle" alt=""
+                    style="height: 30px" />
+            </a>
+
+            <a href="">
+                <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="border rounded-circle" alt=""
+                    style="height: 30px" />
+            </a>
+
+            <a href="">
+                <img src="https://mdbootstrap.com/img/new/avatars/3.jpg" class="border rounded-circle" alt=""
+                    style="height: 30px" />
+            </a>
+
+            <a href="">
+                <img src="https://mdbootstrap.com/img/new/avatars/4.jpg" class="border rounded-circle" alt=""
+                    style="height: 30px" />
+            </a>
+
+            <a href="">
+                <img src="https://mdbootstrap.com/img/new/avatars/5.jpg" class="border rounded-circle" alt=""
+                    style="height: 30px" />
+            </a>
+            <button type="button" class="btn btn-outline-primary btn-floating btn mr-1"
+                style="height: 30px; width: 30px">
+                +2
+            </button>
+
+            <button class="btn btn-outline-primary mr-1" data-ripple-color="dark" type="button">
+                <i class="fas fa-user-plus mr-2"></i>Invite
+            </button>
+        </div>
+        <!-- Left elements -->
+    </div>
+    <!-- Container wrapper -->
+</nav>
+<div class="background-board">
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
+        <div class="drag-container"></div>
+        <div class="board m-3 p-2 pb-0">
+            <div class="board-column ">
+                <div class="board-column-container">
+                    <div class="board-column-header">Todo</div>
+                    <div class="board-column-content-wrapper">
+                        <div class="board-column-content">
+                            <div class="board-item">
+                                <div class="board-item-content"><span>Item #</span>1</div>
+                            </div>
+                            <div class="board-item">
+                                <div class="board-item-content"><span>Item #</span>2</div>
+                            </div>
+                            <div class="board-item">
+                                <div class="board-item-content"><span>Item #</span>3</div>
+                            </div>
+                            <div class="board-item">
+                                <div class="board-item-content"><span>Item #</span>4</div>
+                            </div>
+                            <div class="board-item">
+                                <div class="board-item-content"><span>Item #</span>5</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="board-column ">
+                <div class="board-column-container">
+                    <div class="board-column-header">Working</div>
+                    <div class="board-column-content-wrapper">
+                        <div class="board-column-content">
+                            <div class="board-item">
+                                <div class="board-item-content"><span>Item #</span>6</div>
+                            </div>
+                            <div class="board-item">
+                                <div class="board-item-content"><span>Item #</span>7</div>
+                            </div>
+                            <div class="board-item">
+                                <div class="board-item-content"><span>Item #</span>8</div>
+                            </div>
+                            <div class="board-item">
+                                <div class="board-item-content"><span>Item #</span>9</div>
+                            </div>
+                            <div class="board-item">
+                                <div class="board-item-content"><span>Item #</span>10</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="board-column ">
+                <div class="board-column-container">
+                    <div class="board-column-header">Done</div>
+                    <div class="board-column-content-wrapper">
+                        <div class="board-column-content">
+                            <div class="board-item">
+                                <div class="board-item-content"><span>Item #</span>11</div>
+                            </div>
+                            <div class="board-item">
+                                <div class="board-item-content"><span>Item #</span>12</div>
+                            </div>
+                            <div class="board-item">
+                                <div class="board-item-content"><span>Item #</span>13</div>
+                            </div>
+                            <div class="board-item">
+                                <div class="board-item-content"><span>Item #</span>14</div>
+                            </div>
+                            <div class="board-item">
+                                <div class="board-item-content"><span>Item #</span>15</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

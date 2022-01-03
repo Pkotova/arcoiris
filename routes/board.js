@@ -21,8 +21,21 @@ router.post('/create-board', (req, res) => {
     })
     res.redirect('/')
 })
+
 router.post('/read-board', (req, res) => {
+    res.render('dashboard', {
+        user: req.user
+      })
 })
+
+router.get('/:id', (req, res) =>  {
+
+    res.render('dashboard', {
+        user: req.user
+      })
+}
+)
+
 router.get('/delete-board/:id', function (req, res) {
 })
 router.post('/update-board/:id', function (req, res) {
