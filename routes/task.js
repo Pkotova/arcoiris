@@ -6,14 +6,24 @@ const Task = require("../models/Task");
 
 
 router.post('/create-task', (req, res) => {
-    const title = req.body['title'];
-    const board = req.body['board'];
-    const uniqueIdentifier = req.body['uniqueIdentifier'];
-    const description = req.body['description'];
-    const estimatedTime = req.body['estimatedTime'];
+    // const title = req.body['title'];
+    // const board = req.body['board'];
+    // const uniqueIdentifier = req.body['uniqueIdentifier'];
+    // const description = req.body['description'];
+    // const estimatedTime = req.body['estimatedTime'];
+    // const owner = req.user.name;
+    // const assignee = req.body['assignee'];
+    // const section = req.body['section'];
+
+    const title ="New Task";
+    const board = "61d47a80eb4c804bb67d816c";
+    const uniqueIdentifier = "HM";
+    const description = "bla bla";
+    const estimatedTime = "bla bla";
     const owner = req.user.name;
-    const assignee = req.body['assignee'];
-    const section = req.body['section'];
+    const assignee = "boom boom";
+    const section = "61d47a80eb4c804bb67d816f";
+    
     const newTask = new Task ({
         title: title,
         uniqueIdentifier:uniqueIdentifier,
