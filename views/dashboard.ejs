@@ -7,7 +7,7 @@
         <div class="d-flex align-items-center">
 
             <button class="btn btn-link mr-1" data-ripple-color="dark" type="button">
-               Board Name
+             <%= board.title %>
             </button>
 
             <button class="btn btn-outline-primary mr-1" data-ripple-color="dark" type="button">
@@ -51,11 +51,40 @@
     </div>
     <!-- Container wrapper -->
 </nav>
+
 <div class="background-board">
     <div class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
         <div class="drag-container"></div>
         <div class="board m-3 p-2 pb-0">
-            <div class="board-column ">
+            <% sections.forEach(function(section) { %> 
+                
+                <div class="board-column ">
+                    <div class="board-column-container">
+                        <div class="board-column-header"><%= section.title %></div>
+                        <div class="board-column-content-wrapper">
+                            <div class="board-column-content">
+                                <div class="board-item">
+                                    <div class="board-item-content"><span>Item #</span>1</div>
+                                </div>
+                                <div class="board-item">
+                                    <div class="board-item-content"><span>Item #</span>2</div>
+                                </div>
+                                <div class="board-item">
+                                    <div class="board-item-content"><span>Item #</span>3</div>
+                                </div>
+                                <div class="board-item">
+                                    <div class="board-item-content"><span>Item #</span>4</div>
+                                </div>
+                                <div class="board-item">
+                                    <div class="board-item-content"><span>Item #</span>5</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <% })%>
+            
+            <!-- <div class="board-column ">
                 <div class="board-column-container">
                     <div class="board-column-header">Todo</div>
                     <div class="board-column-content-wrapper">
@@ -81,7 +110,7 @@
             </div>
             <div class="board-column ">
                 <div class="board-column-container">
-                    <div class="board-column-header">Working</div>
+                    <div class="board-column-header">In progress</div>
                     <div class="board-column-content-wrapper">
                         <div class="board-column-content">
                             <div class="board-item">
@@ -126,7 +155,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>

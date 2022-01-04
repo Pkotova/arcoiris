@@ -4,6 +4,9 @@ const SectionSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    boardId:{
+        type:String
+    },
     createdDate: {
         type: Date,
         default: Date.now

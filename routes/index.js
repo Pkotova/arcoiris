@@ -13,8 +13,6 @@ router.get('/index', ensureAuthenticated, (req, res) => {
 
   // console.log(arr);
   BoardModel.find({owner: req.user.name},function(err,data){
-      console.log(data);
-      console.log( req.user.name);
     res.render('index', {
       user: req.user,
       boards: data

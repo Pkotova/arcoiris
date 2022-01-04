@@ -9,6 +9,9 @@ const BoardSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    participants :{
+        type: Array
+    },
     createdDate :{
         type: Date,
         default: Date.now

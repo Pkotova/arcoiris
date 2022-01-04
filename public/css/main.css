@@ -62,3 +62,8 @@ main.welcome {
   padding-left: 50px;
   padding-right: 50px;
 }
+.boards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
